@@ -9,9 +9,12 @@ public class SelectionSort {
 
     public int[] sort() {
         int temp;
-        for (int index = 0; index < array.length; index++) {
-            for (int j = index + 1; j < array.length; j++) {
-                if (array[index] > array[j]) {
+        for (int index = 0; index < array.length; index++)
+        {
+            for (int j = index + 1; j < array.length; j++)
+            {
+                if (array[index] > array[j])
+                {
                     temp = array[index];
                     array[index] = array[j];
                     array[j] = temp;

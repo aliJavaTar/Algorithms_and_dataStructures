@@ -8,9 +8,10 @@ class SelectionSortTest {
     void should_sort_array() {
         int[] array = {9, 14, 3, 2, 43, 11, 58, 22};
         SelectionSort selection = new SelectionSort(array);
-        int[] sort = selection.sort();
+        int[] arrayOfterSort = selection.sort();
+
         int[] expected = {2, 3, 9, 11, 14, 22, 43, 58};
-        Assertions.assertThat(sort).isEqualTo(expected);
+        Assertions.assertThat(arrayOfterSort).isEqualTo(expected);
     }
 
 }
