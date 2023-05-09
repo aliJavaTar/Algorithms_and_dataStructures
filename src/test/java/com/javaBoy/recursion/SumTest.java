@@ -13,4 +13,12 @@ class SumTest {
         int result = r.sum(10);
         Assertions.assertThat(result).isEqualTo(55);
     }
+
+
+    @Test
+    void tailSum() {
+        Sum r = new Sum();
+        int result = r.tailSum(4,2);
+        Assertions.assertThat(result).isEqualTo(7);
+    }
 }
