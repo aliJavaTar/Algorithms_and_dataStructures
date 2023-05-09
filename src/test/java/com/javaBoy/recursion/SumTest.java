@@ -7,7 +7,7 @@ class SumTest {
 
     @Test
     void sum() {
-        RecursionFSum r = new RecursionFSum();
+        RecursionSum r = new RecursionSum();
         int result = r.sum(10);
         Assertions.assertThat(result).isEqualTo(55);
     }
@@ -15,7 +15,7 @@ class SumTest {
 
     @Test
     void tailSum() {
-        RecursionFSum r = new RecursionFSum();
+        RecursionSum r = new RecursionSum();
         int result = r.tailSum(4,2);
         Assertions.assertThat(result).isEqualTo(7);
     }
