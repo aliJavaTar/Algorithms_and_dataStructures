@@ -3,13 +3,11 @@ package com.javaBoy.recursion;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class SumTest {
 
     @Test
     void sum() {
-        Sum r = new Sum();
+        RecursionFSum r = new RecursionFSum();
         int result = r.sum(10);
         Assertions.assertThat(result).isEqualTo(55);
     }
@@ -17,7 +15,7 @@ class SumTest {
 
     @Test
     void tailSum() {
-        Sum r = new Sum();
+        RecursionFSum r = new RecursionFSum();
         int result = r.tailSum(4,2);
         Assertions.assertThat(result).isEqualTo(7);
     }

@@ -1,6 +1,6 @@
 package com.javaBoy.recursion;
 
-public class Sum {
+public class RecursionFSum {
 
     public int sum(int number) {
         if (number > 0) {
