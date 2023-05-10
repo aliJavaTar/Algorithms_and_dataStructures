@@ -10,7 +10,19 @@ class FindCommonWordTest {
         FindCommonWord word = new FindCommonWord();
         char[] characters = {'a', 'b', 'c'};
         char[] words = {'y', 'e', 'c'};
-        Assertions.assertThat(word.hasCommonWord(characters,words)).isTrue();
+        Assertions.assertThat(word.hasCommonWord(characters, words)).isTrue();
+    }
+
+    @Test
+    void should_if_find_common_word_in_array_return_true_better() {
+        FindCommonWord word = new FindCommonWord();
+        char[] characters = {'a', 'b', 'c'};
+        char[] words = {'y', 'e', 'c'};
+        Assertions.assertThat(word.hasCommonWordBetterWayWhitSet(characters, words)).isTrue();
+
+        char[] characters1 = {'a', 'b', 'c'};
+        char[] words1 = {'y', 'e', 'd'};
+        Assertions.assertThat(word.hasCommonWordBetterWayWhitSet(characters1, words1)).isFalse();
     }
 
 }
