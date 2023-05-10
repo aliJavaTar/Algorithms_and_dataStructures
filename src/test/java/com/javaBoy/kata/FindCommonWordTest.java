@@ -18,11 +18,11 @@ class FindCommonWordTest {
         FindCommonWord word = new FindCommonWord();
         char[] characters = {'a', 'b', 'c'};
         char[] words = {'y', 'e', 'c'};
-        Assertions.assertThat(word.hasCommonWordBetterWayWhitSet(characters, words)).isTrue();
+        Assertions.assertThat(word.hasCommonWordBetterWayWhitMap(characters, words)).isTrue();
 
         char[] characters1 = {'a', 'b', 'c'};
         char[] words1 = {'y', 'e', 'd'};
-        Assertions.assertThat(word.hasCommonWordBetterWayWhitSet(characters1, words1)).isFalse();
+        Assertions.assertThat(word.hasCommonWordBetterWayWhitMap(characters1, words1)).isFalse();
     }
 
 }
