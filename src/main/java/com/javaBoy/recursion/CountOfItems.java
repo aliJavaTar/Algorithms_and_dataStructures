@@ -18,4 +18,11 @@ public class CountOfItems {
         return sum;
 //        return Arrays.stream(array).sum();
     }
+
+    public int recursion(int[] array, int number) {
+
+        if (number <= 0)
+            return 0;
+        return (recursion(array, number - 1) + array[number - 1]);
+    }
 }
