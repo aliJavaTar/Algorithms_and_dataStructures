@@ -11,6 +11,11 @@ public class CountOfItems {
     }
 
     public int calculate() {
-        return Arrays.stream(array).sum();
+        int sum = 0;
+        for (int index : array) {
+            sum += index;
+        }
+        return sum;
+//        return Arrays.stream(array).sum();
     }
 }
