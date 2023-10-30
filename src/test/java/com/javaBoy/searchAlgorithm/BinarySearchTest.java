@@ -1,5 +1,6 @@
 package com.javaBoy.searchAlgorithm;
 
+import com.javaBoy.algorithm.searchAlgorithm.binary.BinarySearch;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 

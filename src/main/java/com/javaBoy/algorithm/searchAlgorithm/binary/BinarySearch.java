@@ -1,4 +1,4 @@
-package com.javaBoy.searchAlgorithm;
+package com.javaBoy.algorithm.searchAlgorithm.binary;
 
 public class BinarySearch {
 
