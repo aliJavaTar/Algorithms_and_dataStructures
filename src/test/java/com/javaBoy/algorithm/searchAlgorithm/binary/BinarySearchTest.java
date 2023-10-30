@@ -1,4 +1,4 @@
-package com.javaBoy.searchAlgorithm;
+package com.javaBoy.algorithm.searchAlgorithm.binary;
 
 import com.javaBoy.algorithm.searchAlgorithm.binary.BinarySearch;
 import org.assertj.core.api.Assertions;
