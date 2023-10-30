@@ -1,5 +1,6 @@
 package com.javaBoy.dataStructure.array.kata;
 
+import com.javaBoy.dataStructure.array.kata.easy.Find;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

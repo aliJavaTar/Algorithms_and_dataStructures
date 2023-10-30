@@ -1,8 +1,9 @@
-package com.javaBoy.dataStructure.array.kata;
+package com.javaBoy.dataStructure.array.kata.easy;
 
 public class Find {
 
     private final int[] numbers;
+
 
     public Find(int[] numbers) {
         if (numbers.length < 3) throw new IllegalArgumentException("you hava to three element");
