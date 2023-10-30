@@ -3,39 +3,34 @@ package com.javaBoy.dataStructure.array.kata;
 public record Find(int[] numbers) {
 
     public Find {
-        if (numbers.length < 3)
-            throw new IllegalArgumentException("you hava to three element");
+        if (numbers.length < 3) throw new IllegalArgumentException("you hava to three element");
     }
 
     public int[] findLargestThree() {
-//        int firstLargest, secondLargest, thirdLargest = 0;
+        int firstLargest = 0, secondLargest = 0, thirdLargest = 0;
+        int firstIndex = 0, secondIndex = 0;
 
-        int[] largestThree = new int[3];
-        int shorterNumber = numbers[0];
-        int count=0;
-        for (int index = 1; index < numbers.length; index++) {
-            if (shorterNumber > numbers[index]) {
-                shorterNumber = numbers[index];
+        for (int index = 0; index < numbers.length; index++) {
+            if (firstLargest < numbers[index]) {
+                firstLargest = numbers[index];
+                firstIndex = index;
             }
-            largestThree[count] = numbers[index];
-            count++;
         }
 
-        return largestThree;
+        for (int index = 0; index < numbers.length; index++) {
+            if (secondLargest < numbers[index] && index != firstIndex) {
+                secondLargest = numbers[index];
+                secondIndex = index;
+            }
+        }
+
+        for (int index = 0; index < numbers.length; index++) {
+            if (thirdLargest < numbers[index] && (index != firstIndex && index !=secondIndex)) {
+                thirdLargest = numbers[index];
+            }
+
+        }
+        return new int[]{firstLargest, secondLargest, thirdLargest};
     }
 
-    @Override
-    public boolean equals(Object o) {
-        return false;
-    }
-
-    @Override
-    public int hashCode() {
-        return 0;
-    }
-
-    @Override
-    public String toString() {
-        return null;
-    }
 }
